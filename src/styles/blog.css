@@ -1,0 +1,41 @@
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    width: 40ch;
+    height: 180px;
+    list-style: none;
+    text-align: center;
+}
+.link-post {
+    height: 100%;
+    padding: 4.5rem 8rem;
+    background-color: blue;
+    line-height: 200px;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 568px) {
+    ul {
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+    .link-post {
+        height: 100%;
+        padding: 4rem 10rem;
+        background-color: blue;
+        line-height: 200px;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+    }
+}

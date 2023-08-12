@@ -1,15 +1,62 @@
 ---
+import "../styles/global.css";
+const pageTitle = "Home Page";
+const blogName = "Astro Blog";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Meu site Astro</h1>
-	</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+
+    <h1>{pageTitle}</h1>
+    <p>"Seja bem-vindo ao {blogName}!"</p>
+
+    <p>
+      Nosso blog é o seu destino online para informações relevantes, inspiração
+      e entretenimento. Aqui, buscamos compartilhar conteúdo que informa,
+      envolve e enriquece sua vida.
+    </p>
+    <p>
+      Exploramos uma ampla gama de tópicos, desde dicas práticas para o dia a
+      dia até reflexões profundas sobre questões atuais. Nossa equipe de
+      redatores está empenhada em trazer artigos perspicazes e bem pesquisados,
+      tudo com o objetivo de proporcionar a você uma experiência valiosa sempre
+      que visitar nosso espaço virtual.
+    </p>
+    <p>
+      Quer esteja procurando por guias passo a passo, análises aprofundadas,
+      histórias inspiradoras ou apenas uma pausa divertida, estamos aqui para
+      atender às suas necessidades. Navegue por nossas categorias para encontrar
+      exatamente o que você procura e descubra novas perspectivas ao longo do
+      caminho. Acreditamos que a informação é a chave para a capacitação, e é
+      por isso que estamos comprometidos em oferecer um conteúdo que educa e
+      motiva. Valorizamos a interação com nossa comunidade, por isso
+      incentivamos você a compartilhar seus pensamentos, ideias e opiniões nos
+      comentários. Juntos, podemos criar um ambiente enriquecedor de aprendizado
+      e troca de conhecimentos.
+    </p>
+    <p>
+      Obrigado por nos escolher como sua fonte de informações. Prepare-se para
+      embarcar em uma jornada de descoberta e aprendizado conosco. Não deixe de
+      nos seguir nas redes sociais e se inscrever para receber nossas
+      atualizações mais recentes diretamente em sua caixa de entrada.
+    </p>
+    <p>
+      Bem-vindo mais uma vez ao {blogName}! Sinta-se em casa e comece a
+      explorar." Lembre-se de personalizar o texto de acordo com o nome do seu
+      blog, sua proposta única e os tópicos que você pretende abordar.
+    </p>
+
+    
+  </body>
 </html>
