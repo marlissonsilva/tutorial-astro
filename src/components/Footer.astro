@@ -1,0 +1,33 @@
+---
+import Social from './Social.astro';
+---
+
+<footer>
+<p>Minhas midias sociais</p>
+<div>
+ <Social platform="twitter" username="marlissonsilva"/>
+ <Social platform="github" username="marlissonsilva"/>
+ <Social platform="youtube" username="@marlyssonsilva2704"/>
+ <Social platform="linkedin" username="in/marlysson-silva-mcs/"/>
+</div>
+</footer>
+
+<style>
+    footer{
+        display:flex;
+        gap:1rem;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        background-color:black;
+        padding:1rem ;
+        color:white;
+        margin-top: 2rem;
+    }
+    @media screen and (max-width: 568px) {
+        footer{
+        flex-wrap:wrap;
+        
+    }
+    }
+</style>

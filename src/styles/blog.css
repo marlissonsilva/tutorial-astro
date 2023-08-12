@@ -19,6 +19,7 @@ ul {
     line-height: 200px;
     font-size: 1.5rem;
     border-radius: 1rem;
+    color: white;
 }
 
 @media screen and (max-width: 568px) {
