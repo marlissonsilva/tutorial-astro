@@ -6,8 +6,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 90ch;
-  padding: 1rem;
+  max-width: 1540px;
   line-height: 1.5;
 }
 
@@ -20,11 +19,23 @@ h1 {
   color: purple;
   font-size: 4rem;
 }
+/* header */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* nav styles */
 .hamburger {
-  padding-right: 20px;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
 
 .hamburger .line {
@@ -32,31 +43,33 @@ h1 {
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #f16f47;
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
   display: none;
   margin: 0;
 }
 
 .nav-links a {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: rgb(236, 233, 233);
 }
 
 .nav-links a:hover,
 a:focus {
   background-color: #ff9776;
+  border-radius: 0.3rem;
 }
 
 .expanded {
@@ -70,7 +83,6 @@ a:focus {
     position: static;
     width: auto;
     background: none;
-    
   }
 
   .nav-links a {

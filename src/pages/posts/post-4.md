@@ -1,15 +1,15 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Meu Quarto Post no Blog
 author: Astro Learner
 description: "Enfrentei alguns desafios, mas pedir ajuda na comunidade realmente fez a diferença!"
 image:
     url: "https://docs.astro.build/assets/rays.webp"
     alt: "Miniatura dos raios do Astro."
+
 pubDate: 2022-07-15
 tags: ["astro", "aprendizado em público", "contratempos", "comunidade"]
 ---
-# Meu Quarto Post no Blog
-
 Quando comecei a minha jornada de aprendizado com o Astro, estava cheio de empolgação e energia. Afinal, a ideia de construir projetos da web de forma mais rápida e eficiente sempre me atraiu. No entanto, como todos sabemos, nem todas as jornadas são tão suaves quanto planejamos.
 
 Minhas primeiras incursões com o Astro foram cheias de entusiasmo, mas logo encontrei alguns obstáculos desafiadores. Confrontar bugs inesperados e lidar com a curva de aprendizado inicial foi um lembrete humilde de que o progresso nem sempre é linear. Em momentos como esses, é fácil sentir-se desencorajado, mas eu estava determinado a superar esses contratempos.
