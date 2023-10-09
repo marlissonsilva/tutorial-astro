@@ -15,10 +15,12 @@ const {pageTitle} = Astro.props;
     <style>
       section {
         max-width: 900px;
-        margin:0 auto;
+        margin: 0 auto;
         padding: 1rem;
       }
     </style>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body>
     <Header />
@@ -29,6 +31,25 @@ const {pageTitle} = Astro.props;
     <Footer />
     <script>
       import "../scripts/menu.js";
+    </script>
+    <script>
+      ...
+        declare global {
+          ...
+          interface Window{
+            netlifyIdentity:sny;
+          }
+        }
+
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user:any) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
     </script>
   </body>
 </html>
